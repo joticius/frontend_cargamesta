@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CargamEsta - Gestión de transporte de carga">
+    <title>CargamEsta - Login</title>
+    <link rel="stylesheet" href="Css/estilos.css">
+</head>
+<body>
+    <div class="container-login">
+        <div class="login-box">
+            <img src="assets/logo_cargamesta.png" alt="Logo CargamEsta" class="logo">
+            <h1>Bienvenido</h1>
+            <p>Gestiona y vigila tus cargas y viajes con nosotros</p>
+            
+            <form id="loginForm" class="formulario-login">
+                <div class="grupo-input">
+                    <label>Usuario o Correo</label>
+                    <input type="text" id="usuario" placeholder="admin" required>
+                </div>
+                
+                <div class="grupo-input">
+                    <label>Contraseña</label>
+                    <input type="password" id="contrasena" placeholder="admin123" required>
+                </div>
+                
+                <button type="submit" class="btn-primario">Iniciar sesión</button>
+            </form>
+            
+            <div id="mensajeError" class="error-login" style="display:none;"></div>
+        </div>
+        
+        <div class="login-camiones">
+            <div class="camion"></div>
+            <div class="camion"></div>
+            <div class="camion"></div>
+            <div class="camion"></div>
+            <div class="camion"></div>
+        </div>
+    </div>
+
+    <script src="Js/auth.js"></script>
+</body>
+</html>

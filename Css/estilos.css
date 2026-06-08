@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-rojo: #C1272D;
+    --color-negro: #1a1a1a;
+    --color-blanco: #ffffff;
+    --color-gris: #f5f5f5;
+    --color-gris-claro: #f9f9f9;
+    --color-success: #27ae60;
+    --color-error: #e74c3c;
+    --color-warning: #f39c12;
+    --color-info: #3498db;
+    --transicion: all 0.3s ease;
+}
+
+html, body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    line-height: 1.6;
+    height: 100%;
+}

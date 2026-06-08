@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .container-login {
+        grid-template-columns: 1fr;
+    }
+    
+    .login-camiones {
+        display: none;
+    }
+    
+    .login-box {
+        padding: 20px;
+    }
+    
+    .tabla {
+        font-size: 12px;
+    }
+    
+    .tabla th, .tabla td {
+        padding: 8px;
+    }
+}

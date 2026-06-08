@@ -1,0 +1,135 @@
+.container-login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    gap: 0;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: var(--color-blanco);
+    box-shadow: inset -5px 0 15px rgba(0,0,0,0.05);
+}
+
+.login-box .logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.login-box h1 {
+    color: var(--color-rojo);
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login-box p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.formulario-login {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grupo-input label {
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--color-negro);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.grupo-input input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: var(--transicion);
+}
+
+.grupo-input input:focus {
+    outline: none;
+    border-color: var(--color-rojo);
+    box-shadow: 0 0 8px rgba(193, 39, 45, 0.2);
+    background-color: #fafafa;
+}
+
+.btn-primario {
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transicion);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.btn-primario:hover {
+    background-color: #a71f24;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(193, 39, 45, 0.3);
+}
+
+.btn-primario:active {
+    transform: translateY(0);
+}
+
+.login-camiones {
+    background: linear-gradient(135deg, var(--color-rojo), #8B1C23);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 40px;
+    gap: 20px;
+}
+
+.camion {
+    width: 60px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.camion:nth-child(2) { animation-delay: 0.3s; }
+.camion:nth-child(3) { animation-delay: 0.6s; }
+.camion:nth-child(4) { animation-delay: 0.9s; }
+.camion:nth-child(5) { animation-delay: 1.2s; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.error-login {
+    color: var(--color-error);
+    background-color: #fee;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    text-align: center;
+}
